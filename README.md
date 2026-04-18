@@ -48,8 +48,8 @@ python app/app.py
 
 ## 📷 Demo
 
-(Add screenshots here — VERY IMPORTANT)
-
+![website demo](data.png)
+![prediction score](prediction.pngpng)
 ---
 
 ## 📌 Key Features
