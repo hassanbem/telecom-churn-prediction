@@ -7,11 +7,11 @@ import sklearn
 app = Flask(__name__)
 
 #LOAD MODELS
-log_reg_model = pickle.load(open('saved models\\churn_logistic_regression_model_for_deployment.pkl', "rb"))
-xgb_model = pickle.load(open('saved models\\churn_xgb_model_for_deployment.pkl', "rb"))
+log_reg_model = pickle.load(open('models\\churn_logistic_regression_model_for_deployment.pkl', "rb"))
+xgb_model = pickle.load(open('models\\churn_xgb_model_for_deployment.pkl', "rb"))
 
 #mapping from zip codes to population, latitude and longitude data
-zip_code_map_df = pd.read_csv("created CSVs\\zip_code_map_df.csv", index_col = 'Zip Code')
+zip_code_map_df = pd.read_csv("data\\processed\\zip_code_map_df.csv", index_col = 'Zip Code')
 
 #CREATE APP ROUTE
 # Route for the home page
